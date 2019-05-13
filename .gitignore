@@ -1,0 +1,57 @@
+# Ignore docs files
+_gh_pages
+_site
+.ruby-version
+package-lock.json
+
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.zip
+!dist/*.zip
+*.vi
+*~
+
+# OS or Editor folders
+.DS_Store
+._*
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
+*.sublime-project
+*.sublime-workspace
+.idea
+.DS_Store
+.sass-cache
+.publish
+public
+Desktop.ini
+npm-debug.log
+.vscode
+yarn.lock
+
+# Komodo
+*.komodoproject
+.komodotools
+
+# Folders to ignore
+node_modules
+node_modules.7z
+node_modules.zip
+bower_components
+bower_components.7z
+bower_components.zip
+typings
+dist
+dist.7z
+dist.zip
+.idea/*

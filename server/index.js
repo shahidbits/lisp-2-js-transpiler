@@ -1,0 +1,13 @@
+const {Application} = require('./app');
+const {Controller} = require('./controller');
+const {LexerService} = require('./services/lexerService');
+const {LispGrammarEngine} = require('./services/lispGrammarEngine');
+const {TreeService} = require('./services/treeService');
+const {Transpiler} = require('./transpiler');
+const lexerService = new LexerService();
+const grammarEngine = new LispGrammarEngine();
+const treeGenerator = new TreeService();
+const transpiler = new Transpiler(lexerService, grammarEngine, treeGenerator);
+const controller = new Controller(transpiler);
+const server = new Application(controller);
+server.init(4000);
